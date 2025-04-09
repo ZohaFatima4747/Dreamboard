@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import "./Home.css";
-import post1 from "../assets/post1.jpg";
-import post2 from "../assets/post2.jpg";
-import post3 from "../assets/post3.jpg";
+import post1 from "/Dreamboard/assets/post1.jpg";
+import post2 from "/Dreamboard/assets/post2.jpg";
+import post3 from "/Dreamboard/assets/post3.jpg";
 
 const postsData = [
   {
