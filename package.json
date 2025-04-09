@@ -1,6 +1,7 @@
 {
   "name": "dreamboard",
   "private": true,
+  "homepage":"https://github.com/ZohaFatima4747/Dreamboard.git",
   "version": "0.0.0",
   "type": "module",
   "scripts": {
