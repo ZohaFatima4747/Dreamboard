@@ -1,0 +1,82 @@
+/* Sidebar Base Styles */
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: -260px; /* Default hidden */
+  width: 250px;
+  height: 100vh;
+  background: #222;
+  padding-top: 20px;
+  transition: left 0.3s ease-in-out;
+  z-index: 1100;
+  box-shadow: 2px 0 10px rgba(0, 0, 0, 0.5);
+}
+
+/* Sidebar Open State */
+.sidebar.open {
+  left: 0;
+}
+
+/* Sidebar List */
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.sidebar ul li {
+  padding: 15px;
+  border-bottom: 1px solid #444;
+}
+
+/* Sidebar Links */
+.sidebar ul li a {
+  text-decoration: none;
+  color: #fff;
+  display: block;
+  font-size: 16px;
+  transition: background 0.3s;
+}
+
+.sidebar ul li a:hover {
+  background: #333;
+}
+
+/* Close Button */
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: none;
+  border: none;
+  font-size: 20px;
+  color: white;
+  cursor: pointer;
+}
+
+/* Backdrop for Click to Close */
+.sidebar-backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 1099;
+  display: none;
+}
+
+/* Show Backdrop When Sidebar is Open */
+.sidebar.open + .sidebar-backdrop {
+  display: block;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+  .sidebar {
+    width: 220px;
+  }
+  .sidebar ul li {
+    padding: 12px;
+  }
+}

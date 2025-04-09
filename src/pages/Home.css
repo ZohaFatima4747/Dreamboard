@@ -1,0 +1,350 @@
+/* --- General Styles --- */
+.homepage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  min-height: 100vh;
+  width: 100vw;
+  background-color: black;
+  padding-top: 20px;
+}
+
+h1{
+  position: absolute;
+  top: 0px;
+  right:35px;
+  color: white;
+  font-family:Billabong;
+  text-shadow:
+  1px 1px 2px red,
+  0 0 1em blue,
+  0 0 0.2em blue;
+  font-size: 25px;
+}
+
+/* --- Sidebar Toggle Button --- */
+.sidebar-toggle {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  background: none;
+  border: none;
+  color: white;
+  font-size: 24px;
+  cursor: pointer;
+  z-index: 1000;
+}
+/* --- Stories Section --- */
+.stories-container {
+  width: 100%;
+  display: flex;
+  scroll-behavior: smooth;
+  justify-content: center;
+  padding: 10px 0;
+}
+
+.stories::-webkit-scrollbar{
+  display: none;
+}
+
+.stories {
+  display: flex;
+  gap: 10px;
+  overflow-x: scroll;
+  max-width: 600px;
+}
+
+.story {
+  min-width: 80px;
+  height: 80px;
+  background-color: gray;
+  border-radius: 50%;
+  border: 3px solid orange;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  color: white;
+}
+
+.story-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 70px;
+}
+
+.story-img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888);
+  color: white;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+}
+
+.story-username {
+  margin-top: 5px;
+  font-size: 12px;
+  color: #fff;
+  text-align: center;
+}
+
+
+/* --- Feed Section (Posts) --- */
+.feed {
+  width: 100%;
+  max-width: 650px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  padding: 30px;
+  margin: 0 auto;
+}
+
+.HpPost {
+  background: #1e1e1e;
+  padding: 30px;
+  border-radius: 12px;
+  width: auto;
+  box-shadow: 0px 5px 15px rgba(255, 255, 255, 0.1);
+  gap: 35px;
+}
+
+.post-header {
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: white;
+}
+
+.post-img img {
+  width: 100%;
+  max-width: 400px;
+  object-fit: contain;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.post-actions {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+  gap: 20px;
+  padding: 15px 0;
+}
+
+.like-button {
+  background: #ff9800;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.like-button:hover {
+  background: #e68900;
+}
+
+.caption {
+  font-size: 14px;
+  font-weight: bold;
+  color: #e68900;
+}
+
+/* --- Dream Type Icon & Progress Bar --- */
+.dream-type {
+  font-size: 14px;
+  color: #ff9800;
+  margin-top: 10px;
+}
+/* --- Progress Bar Styling --- */
+.progress-container {
+  width: 100%;
+  height: 20px;
+  background-color: #ddd;
+  border-radius: 10px;
+  margin-top: 10px;
+  margin-bottom: 15px;
+}
+
+.progress-bar {
+  height: 100%;
+  background-color: #ff9800; 
+  border-radius: 10px;
+  text-align: center;
+  line-height: 20px; 
+  color: white;
+  font-weight: bold;
+  transition: width 0.5s ease-in-out; 
+}
+
+.progress-text {
+  font-size: 14px;
+}
+
+/* --- Mini Goals Checklist --- */
+h4{
+  color: aliceblue;
+}
+.mini-goals {
+  margin-top: 20px;
+}
+
+.mini-goals ul {
+  list-style: none;
+  padding: 0;
+}
+
+.mini-goals li {
+  color: #e68900;
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.mini-goals input[type="checkbox"] {
+  margin-right: 10px;
+}
+
+/* --- Tags --- */
+.tags {
+  margin-top: 10px;
+  font-size: 12px;
+  color: #e68900;
+}
+
+.tags span {
+  margin-right: 10px;
+  background-color: #ff9800;
+  padding: 5px 10px;
+  border-radius: 20px;
+  color: white;
+  font-size: 12px;
+}
+
+/* --- Comments Section --- */
+.comments-section {
+  margin-top: 20px;
+}
+
+.comment {
+  color: #bbb;
+}
+
+.comment-input {
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  background-color: #2a2a2a;
+  color: white;
+}
+
+.comment-input::placeholder {
+  color: #888;
+}
+
+/* --- Media Queries for Responsiveness --- */
+@media (max-width: 1024px) {
+  .feed {
+    max-width: 90%;
+    padding: 20px;
+  }
+
+  .post-img img {
+    width: 100%;
+  }
+
+  .stories {
+    max-width: 90%;
+  }
+}
+
+@media (max-width: 768px) {
+  .sidebar-toggle {
+    top: 15px;
+    left: 15px;
+    font-size: 20px;
+  }
+
+  .stories-container {
+    margin-top:35px;
+    padding: 5px 0;
+  }
+
+  .story {
+    width: 60px;
+    font-size: 12px;
+  }
+
+  .feed {
+    padding: 15px;
+    gap: 20px;
+  }
+
+  .HpPost {
+    padding: 20px;
+    gap: 20px;
+  }
+
+  .post-img img {
+    width: 100%;
+    max-width: 350px;
+  }
+
+  .comment-input {
+    width: 80%;
+  }
+}
+
+@media (max-width: 480px) {
+  .homepage {
+    padding-top: 10px;
+  }
+
+  .sidebar-toggle {
+    font-size: 18px;
+    top: 10px;
+    left: 10px;
+  }
+
+  .stories {
+    gap: 5px;
+    overflow-x: scroll;
+    padding: 5px;
+  }
+
+  .story {
+    width: 50px;
+    font-size: 10px;
+  }
+
+  .feed {
+    padding: 10px;
+    gap: 15px;
+  }
+
+  .HpPost {
+    padding: 15px;
+    gap: 15px;
+  }
+
+  .post-img img {
+    max-width: 100%;
+    width: 100%;
+  }
+
+  .caption {
+    font-size: 12px;
+  }
+  .comment-input {
+    width: 80%;
+  }
+}

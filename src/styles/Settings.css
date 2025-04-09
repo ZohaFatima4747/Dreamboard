@@ -1,0 +1,153 @@
+/* Full Page Styling */
+.settings-container {
+    width: 90%;
+    max-width: 400px;
+    margin: auto;
+    padding: 20px;
+    background: #000;
+    color: white;
+    font-family: Arial, sans-serif;
+}
+
+/* Header Styling */
+.settings-header {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px 0;
+}
+
+/* Search Bar */
+.search-bar {
+    display: flex;
+    align-items: center;
+    background: #222;
+    padding: 8px 12px;
+    border-radius: 20px;
+}
+
+.search-bar input {
+    background: transparent;
+    border: none;
+    color: white;
+    margin-left: 10px;
+    width: 100%;
+    outline: none;
+}
+
+.search-icon {
+    color: gray;
+}
+
+/* Sections Styling */
+.settings-section {
+    margin-top: 20px;
+}
+
+.settings-section h3 {
+    font-size: 14px;
+    color: gray;
+    margin-bottom: 10px;
+}
+
+/* Settings Items */
+.settings-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px;
+    background: #111;
+    border-radius: 8px;
+    margin: 5px 0;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.settings-item:hover {
+    background: #222;
+}
+
+.settings-icon {
+    margin-right: 10px;
+    color: white;
+}
+
+.arrow {
+    color: gray;
+}
+
+/* Better spacing and alignment */
+.settings-container {
+    max-width: 600px;
+    margin: auto;
+    padding: 20px;
+  }
+  
+ 
+  .setting-option {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px 15px;
+    font-size: 16px;
+    border-radius: 8px;
+    background: #161616;
+    margin: 8px 0;
+  }
+  
+  /* Icons should align properly */
+  .setting-option i {
+    font-size: 20px;
+    margin-right: 10px;
+  }
+  
+
+  .search-bar {
+    width: 100%;
+    padding: 10px;
+    border-radius: 6px;
+    background: #222;
+    border: none;
+    color: white;
+  }
+
+  /* Mobile Responsiveness */
+  @media (max-width: 768px) {
+    .settings-container {
+      max-width: 80%;
+      padding: 18px;
+    }
+    .setting-option {
+      font-size: 14px;
+      padding: 10px;
+    }
+    .search-bar {
+      padding: 8px;
+    }
+    .settings-container{
+        margin-top: 20px;
+    }
+
+  }
+  
+  /* Extra Small Screens */
+  @media (max-width: 480px) {
+    .settings-container {
+      max-width: 100%;
+      padding: 10px;
+    }
+    .setting-option {
+      font-size: 13px;
+      padding: 8px;
+    }
+    .setting-option i {
+      font-size: 18px;
+    }
+    .search-bar {
+      padding: 6px;
+    }
+    .settings-container{
+        margin-top: 20px;
+    }
+  }
+  
