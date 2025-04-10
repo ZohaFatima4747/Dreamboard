@@ -3,12 +3,12 @@ import Sidebar from "../components/Sidebar";
 import "../styles/Profile.css";
 
 import profileImg from "../assets/profile.jpg";
-import post1 from "/Dreamboard/assets/post1.jpg";
-import post2 from "/Dreamboard/assets/post2.jpg";
-import post3 from "/Dreamboard/assets/post3.jpg";
-import post4 from "/Dreamboard/assets/post4.jpg";
-import post5 from "/Dreamboard/assets/post5.jpg";
-import post6 from "/Dreamboard/assets/post6.jpg";
+import post1 from "../assets/post1.jpg";
+import post2 from "../assets/post2.jpg";
+import post3 from "../assets/post3.jpg";
+import post4 from "../assets/post4.jpg";
+import post5 from "../assets/post5.jpg";
+import post6 from "../assets/post6.jpg";
 
 const Profile = () => {
   const [activeTab, setActiveTab] = useState("posts");
