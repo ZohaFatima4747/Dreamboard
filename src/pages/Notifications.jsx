@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { db } from "../firebase"; 
+import { db } from "../firebase.jsx";
 import { query, onSnapshot, orderBy } from "firebase/firestore";
 import { collection, addDoc, serverTimestamp } from "firebase/firestore";
 import Sidebar from "../components/Sidebar";
